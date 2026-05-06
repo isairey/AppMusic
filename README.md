@@ -1,8 +1,8 @@
-<p align="center">
+
  #HipHop [![Dependency Status](https://david-dm.org/hiphopapp/hiphop.svg?theme=shields.io)](https://david-dm.org/hiphopapp/hiphop)
 
 ![](http://gethiphop.net/images/screenshot.png)
-</p>
+
 
 <h1 align="center">🎧 HipHop</h1>
 
