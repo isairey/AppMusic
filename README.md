@@ -1,58 +1,150 @@
-#HipHop [![Dependency Status](https://david-dm.org/hiphopapp/hiphop.svg?theme=shields.io)](https://david-dm.org/hiphopapp/hiphop)
+<p align="center">
+  <img src="http://gethiphop.net/images/screenshot.png" alt="HipHop App Screenshot" width="900"/>
+</p>
 
-![](http://gethiphop.net/images/screenshot.png)
+<h1 align="center">🎧 HipHop</h1>
 
-## Contribute
+<p align="center">
+  <strong>Aplicación de música multiplataforma construida con tecnologías web</strong><br>
+  Disfruta tu música con una experiencia moderna y ligera.
+</p>
 
-Join us on IRC at `#hiphopapp` on freenode ([web access](http://webchat.freenode.net/?channels=hiphopapp)).
+<p align="center">
+  <img src="https://img.shields.io/badge/Node.js-Backend-green?style=for-the-badge&logo=node.js">
+  <img src="https://img.shields.io/badge/Grunt-Build-orange?style=for-the-badge&logo=grunt">
+  <img src="https://img.shields.io/badge/Desktop-App-blue?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/youruser/hiphop?style=for-the-badge">
+</p>
 
-## Dependencies
+---
 
-You will need nodejs and grunt:
+## 🚀 Descripción
 
-    $ npm install -g grunt-cli
+**HipHop** es una aplicación de música multiplataforma que utiliza tecnologías web para ofrecer una experiencia de reproducción moderna.
 
-And ruby with compass to build the stylesheets. Read [this](http://thesassway.com/beginner/getting-started-with-sass-and-compass) for more information.
+Está diseñada para ejecutarse como aplicación de escritorio utilizando herramientas basadas en Node.js.
 
-## Running and debugging
+---
 
-Run at least once to install dependencies and generate JS and CSS files.
+## ✨ Características
 
-    $ npm install
-    $ grunt
+- 🎧 Reproducción de música  
+- 🖥️ Aplicación de escritorio multiplataforma  
+- ⚡ Construida con tecnologías web modernas  
+- 🔧 Sistema de build automatizado con Grunt  
 
-Run node-webkit from the build/cache directory (--debug always on). Note that grunt build has to be done at least once before this.
+---
 
-    $ grunt run
+## 🤝 Contribuir
 
-## Build
+Puedes unirte a la comunidad:
 
-Build with:
+- 💬 IRC: `#hiphopapp` en freenode  
+- 🌐 Web IRC: http://webchat.freenode.net/?channels=hiphopapp  
 
-    $ grunt build
+---
 
-By default it will build for your current platform however you can control that
-by specifying a comma separated list of platforms in the `platforms` option to
-grunt:
+## 📦 Requisitos
 
-    $ grunt build --platforms=linux32,linux64,mac,win
+Antes de comenzar, asegúrate de tener instalado:
 
-You can also build for all platforms with:
+- Node.js  
+- Grunt CLI  
+- Ruby  
+- Compass (para estilos)
 
-    $ grunt build --platforms=all
+Instalar Grunt:
 
-## Release
+```bash id="g8xv3q"
+npm install -g grunt-cli
+```
 
-_Note: should add some grunt automation here_
+## ⚙️ Instalación
+```
+npm install
+grunt
+```
 
-1. Update `version` in `/package.json`
+Esto instalará dependencias y generará archivos necesarios.
 
-2. `$ grunt build --platforms=mac` or just `$ grunt build` if you're on a Mac (the generated `HipHop.app` will be available in `/build/releases/HipHop/mac/`)
+### ▶️ Ejecutar la aplicación
+```
+grunt run
+```
+⚠️ Nota: Debes ejecutar grunt al menos una vez antes.
 
-3. Download latest Windows version of [rogerwang/node-webkit#downloads](https://github.com/rogerwang/node-webkit#downloads) and put all files in `/node-webkit/win/*`
+---
 
-4. Open and Build `/dist/windows/windows-installer.iss` in a Windows environment (requires [Inno Setup](http://www.jrsoftware.org/isdl.php#stable) installed), this will generate `/dist/windows/Install HipHop x.x.x.exe`. You have your Windows installer!
+## 🛠️ Build
 
-5. Upload both files to `http://download.gethiphop.net/releases/x.x.x/[mac|win]/`
+Para compilar el proyecto:
+```
+grunt build
+Plataformas específicas
+grunt build --platforms=linux32,linux64,mac,win
+Todas las plataformas
+grunt build --platforms=all
+```
+---
 
-6. Update `/misc/update.json` accordingly and upload to `http://gethiphop.net/update.json` (*ONLY* when both releases are available for download)
+## 🚀 Release
+
+### Pasos para crear una versión:
+Actualizar la versión en:
+```
+/package.json
+```
+Generar build:
+```
+grunt build --platforms=mac
+```
+Descargar Node-Webkit para Windows:
+
+```
+👉 https://github.com/rogerwang/node-webkit#downloads
+Copiar archivos en:
+/node-webkit/win/
+Crear instalador con Inno Setup:
+👉 http://www.jrsoftware.org/isdl.php#stable
+```
+
+Archivo:
+```
+/dist/windows/windows-installer.iss
+Subir archivos a:
+http://download.gethiphop.net/releases/x.x.x/
+Actualizar:
+/misc/update.json
+```
+---
+
+## 📂 Estructura del Proyecto
+```
+HipHop/
+├── build/
+├── dist/
+├── node-webkit/
+├── misc/
+├── package.json
+└── README.md
+```
+
+---
+
+## 🧠 Notas
+
+- El proyecto usa herramientas clásicas como Grunt y Node-Webkit
+- Compatible con múltiples sistemas operativos
+- Ideal para aprendizaje o desarrollo de apps desktop con JS
+
+---
+
+## 👨‍💻 Autor
+
+**Isai Reyes**
+
+---
+
+## 📜 Licencia
+
+Consulta el archivo LICENSE para más información.
