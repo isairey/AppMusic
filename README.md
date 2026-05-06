@@ -35,14 +35,6 @@ Está diseñada para ejecutarse como aplicación de escritorio utilizando herram
 
 ---
 
-## 🤝 Contribuir
-
-Puedes unirte a la comunidad:
-
-- 💬 IRC: `#hiphopapp` en freenode  
-- 🌐 Web IRC: http://webchat.freenode.net/?channels=hiphopapp  
-
----
 
 ## 📦 Requisitos
 
